@@ -36,6 +36,6 @@ public class VariableDemo3 {
 	 * 실수형 : float < double
 	 * 논리형 : boolean
 	 * 문자형 : char
-	 *Z
+	 *Z0
 	 */
 }
