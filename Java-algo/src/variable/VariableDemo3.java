@@ -36,6 +36,10 @@ public class VariableDemo3 {
 	 * 실수형 : float < double
 	 * 논리형 : boolean
 	 * 문자형 : char
-	 *Z0
+	 * 
+	 * 
+	 * 자바에선 Class는 무조건 대문자로 시작. 
+	 * 변수는 무조건 소문자로 시작. 
+	 * 기본중의 기본!
 	 */
 }

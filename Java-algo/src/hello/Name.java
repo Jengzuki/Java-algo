@@ -11,9 +11,11 @@ import java.util.Scanner;
  */
 public class Name {
 	public static void main(String[] args) {
-		System.out.println("안녕하십니까");
+		System.out.println("이름입력");
 		Scanner scanner = new Scanner(System.in);
-		String yaho = scanner.next();
-		System.out.println(yaho);
+		Scanner s = new Scanner(System.in);
+		Scanner scan = new Scanner(System.in);
+		String hong = scanner.next();
+		System.out.println("반갑습니다. "+hong+" 님");
 	}
 }
