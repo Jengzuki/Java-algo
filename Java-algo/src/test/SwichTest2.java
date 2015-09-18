@@ -1,15 +1,14 @@
-package comparison;
+package test;
 
 import java.util.Scanner;
 
-/**
- * 
- * @file_name : IfTest.java
+/** 
+ * @file_name : SwichTest2.java
  * @author    : apfl1@naver.com
- * @date      : 2015. 9. 17.
- * @story     : 성적표 프로그램
+ * @date      : 2015. 9. 18.
+ * @story     : 
  */
-public class IfTest {
+public class SwichTest2 {
 	/**
 	 * To. 개발자님
 	 * 프로그램을 하나 개발해야 합니다.
@@ -37,20 +36,26 @@ public class IfTest {
 		int math = scanner.nextInt();
 		int total = (int)(kor + eng + math);
 		int average =(int)(total / 3);
-	    String sorf = null;
-		if (average >= 90) {
-			sorf = "장학생";
-			System.out.println();
-		} else if (average >= 70) {
-			sorf = "합격";
-		} else {
-			sorf = "불합격";
-		} 
-				
-		System.out.println("학생	국어	영어	수학	총점	평균	합격여부");
-		System.out.println("===========================================================================");
-		System.out.println(name+"\t"+kor+"\t"+eng+"\t"+math+"\t"+total+"\t"+average+"\t"+sorf);
-				
 		
+		String sorf = null;
+		
+		switch (average/10) {
+		case 9: case 10:  
+			sorf = "장학생"; break;
+		case 7: case 8:   
+			sorf = "합격"; break;
+		case 1: case 2: case 3: case 4: case 5: case 6:
+			sorf = "불합격"; break;
+		default:
+			System.out.println("다시입력해주세요."); return;
+		}
+						
+		System.out.println("학생\t국어\t영어\t수학\t총점\t평균\t합격여부");
+		System.out.println("===========================================================================");
+		//System.out.println(name+"\t"+kor+"\t"+eng+"\t"+math+"\t"+total+"\t"+average+"\t"+sorf);
+		
+		
+		
+				
 	}
 }
