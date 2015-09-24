@@ -1,4 +1,4 @@
-package look;
+package loop;
 /**
  * 
  * @file_name : ForLoopTen.java

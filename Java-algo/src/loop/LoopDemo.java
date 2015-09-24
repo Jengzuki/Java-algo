@@ -1,4 +1,4 @@
-package look;
+package loop;
 /**
  * @file_name : LoopDemo.java
  * @author    : apfl1@naver.com
