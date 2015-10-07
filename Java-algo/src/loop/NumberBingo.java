@@ -3,6 +3,8 @@ package loop;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+
 /**
  * @file_name : NumberBingo.java
  * @author : apfl1@naver.com
@@ -16,11 +18,8 @@ public class NumberBingo {
 	public static void main(String[] args) {
 		int com = 0, player = 0, count = 0;
 		com = (int) ((Math.random() * 10) + 1);
-		Scanner scanner = new Scanner(System.in);
 		while (true) {
-			System.out.println("1부터 10까지 숫자만 넣으세요,");
-			int temp = scanner.nextInt();
-
+			int temp = Integer.parseInt(JOptionPane.showInputDialog("1부터 10까지 숫자만 넣으세요"));
 			try {
 				count++;
 				if (temp == com) {
